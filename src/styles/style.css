@@ -8,7 +8,6 @@ body {
   color: black;
   line-height: 1.6;
   min-height: 100vh;
-  overflow: hidden;
 }
 
 nav {
@@ -82,5 +81,38 @@ menu {
 menu li {
   margin: 0 1rem;
   padding: 1rem;
+}
+
+.center {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#home-page {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#home-page h1 {
+  font-size: 5rem;
+}
+
+.b\&w {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 /*# sourceMappingURL=style.css.map */
