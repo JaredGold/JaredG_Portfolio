@@ -12,7 +12,7 @@ body {
   background: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   line-height: 1.6;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 nav {
@@ -73,6 +73,32 @@ menu {
 .center{
   text-align: center;
   @include center;
+}
+
+.container{
+  max-height: 100vh;
+  overflow: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.item{
+  background-color:pink;
+  border: 3px solid black;
+  height: 80vh;
+  margin: 60px 60px 0px 60px;
+  display: flex;
+  @include center;
+  flex-direction: column;
+  scroll-snap-align: center;
+}
+
+#bottom-item{
+  margin: 60px;
+}
+
+#about-me{
+  width: 100%;
+  min-height: 100vh;
 }
 
 #home-page{
