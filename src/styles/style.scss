@@ -66,43 +66,43 @@ menu {
   }
 }
 
-.container-y{
-  width: 100%;
-  height: 100%;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
-}
+// .container-y{
+//   width: 100%;
+//   height: 100%;
+//   overflow-y: scroll;
+//   scroll-behavior: smooth;
+//   scroll-snap-type: y mandatory;
+// }
 
-.full-section{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  width: 100%;
-  height: 100vh;
-  scroll-snap-align: center;
-}
+// .full-section{
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   text-align: center;
+//   width: 100%;
+//   height: 100vh;
+//   scroll-snap-align: center;
+// }
 
 
-.container-x{
-  width: 100%;
-  height: 100%;
-  overflow-x: scroll;
-  scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
-}
+// .container-x{
+//   width: 100%;
+//   height: 100%;
+//   overflow-x: scroll;
+//   scroll-behavior: smooth;
+//   scroll-snap-type: x mandatory;
+// }
 
-.card-section{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  width: 80%;
-  height: 80vh;
-  margin: 10%;
-  scroll-snap-align: center;
-  background-color: yellow;
-}
+// .card-section{
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   text-align: center;
+//   width: 80%;
+//   height: 80vh;
+//   margin: 10%;
+//   scroll-snap-align: center;
+//   background-color: yellow;
+// }
