@@ -263,14 +263,14 @@ form {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 50%;
-  height: 400px;
+  height: 600px;
   overflow: hidden;
 }
 
 .form {
   position: relative;
   height: 5%;
-  width: 70%;
+  width: 100%;
 }
 
 .form input {
@@ -329,5 +329,9 @@ form {
   left: 0px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+
+.button {
+  padding: 10px;
 }
 /*# sourceMappingURL=style.css.map */

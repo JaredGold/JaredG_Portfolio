@@ -195,14 +195,14 @@ form {
   align-items: center;
   flex-direction: column;
   width: 50%;
-  height: 400px;
+  height: 600px;
   overflow: hidden;
 }
 
 .form {
   position: relative;
   height: 5%;
-  width: 70%;
+  width: 100%;
 
   input {
     width: 100%;
@@ -255,4 +255,8 @@ form {
   bottom: 5px;
   left: 0px;
   transition: all 0.3s ease;
+}
+
+.button{
+  padding: 10px;
 }
