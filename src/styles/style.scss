@@ -190,6 +190,10 @@ menu {
 }
 
 form {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
   width: 50%;
   height: 400px;
   overflow: hidden;
@@ -226,8 +230,9 @@ form {
     height: 100%;
     width: 100%;
     border-bottom: 3px solid skyblue;
-    transform: translateX(-100%);
+    transform: translateX(-150%);
     transition: all 0.3s ease;
+    opacity: 0%;
   }
 
   input:focus + .label-name .content-name, 
@@ -235,11 +240,13 @@ form {
     transform: translateY(-100%);
     font-size: 0.9rem;
     color: skyblue;
+    opacity: 100%;
   }
 
   input:focus + .label-name::after, 
   input:valid + .label-name::after{
     transform: translateX(0%);
+    opacity: 100%;
   }
 }
 
@@ -249,4 +256,3 @@ form {
   left: 0px;
   transition: all 0.3s ease;
 }
-

@@ -249,6 +249,19 @@ menu li {
 }
 
 form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 50%;
   height: 400px;
   overflow: hidden;
@@ -287,10 +300,11 @@ form {
   height: 100%;
   width: 100%;
   border-bottom: 3px solid skyblue;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+  -webkit-transform: translateX(-150%);
+          transform: translateX(-150%);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  opacity: 0%;
 }
 
 .form input:focus + .label-name .content-name,
@@ -299,12 +313,14 @@ form {
           transform: translateY(-100%);
   font-size: 0.9rem;
   color: skyblue;
+  opacity: 100%;
 }
 
 .form input:focus + .label-name::after,
 .form input:valid + .label-name::after {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
+  opacity: 100%;
 }
 
 .content-name {
