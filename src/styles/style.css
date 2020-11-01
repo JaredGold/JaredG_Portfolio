@@ -3,25 +3,21 @@
   padding: 0;
 }
 
-/* scrollbar width */
 *::-webkit-scrollbar {
   background-color: #fff;
   width: 16px;
 }
 
-/* background of the scrollbar*/
 *::-webkit-scrollbar-track {
   background-color: #fff;
 }
 
-/* scrollbar bar */
 *::-webkit-scrollbar-thumb {
   background-color: #babac0;
   border-radius: 16px;
   border: 4px solid #fff;
 }
 
-/* Top and bottom button */
 *::-webkit-scrollbar-button {
   display: none;
 }
@@ -222,5 +218,100 @@ menu li {
 .b\&w {
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
+}
+
+#contact-me {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-me {
+  min-height: 40vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+form {
+  width: 50%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.form {
+  position: relative;
+  height: 5%;
+  width: 70%;
+}
+
+.form input {
+  width: 100%;
+  height: 150%;
+  color: blue;
+  padding-top: 20px;
+  border: none;
+  outline: none;
+}
+
+.form label {
+  position: absolute;
+  top: 0px;
+  left: 0%;
+  width: 100%;
+  height: 50px;
+  pointer-events: none;
+  border-bottom: 1px solid black;
+}
+
+.form label::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -1px;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid skyblue;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.form input:focus + .label-name .content-name,
+.form input:valid + .label-name .content-name {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  font-size: 0.9rem;
+  color: skyblue;
+}
+
+.form input:focus + .label-name::after,
+.form input:valid + .label-name::after {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.content-name {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 /*# sourceMappingURL=style.css.map */
