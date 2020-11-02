@@ -143,13 +143,17 @@ menu {
   scroll-snap-align: center;
 }
 
+#portfolio{
+  text-align: center;
+  h1{
+  }
+}
 
-
-#top-item {
+.top-item {
   margin: 90px 60px 0px 60px;
 }
 
-#bottom-item {
+.bottom-item {
   margin: 60px;
 }
 

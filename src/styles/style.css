@@ -184,11 +184,15 @@ menu li {
   scroll-snap-align: center;
 }
 
-#top-item {
+#portfolio {
+  text-align: center;
+}
+
+.top-item {
   margin: 90px 60px 0px 60px;
 }
 
-#bottom-item {
+.bottom-item {
   margin: 60px;
 }
 
