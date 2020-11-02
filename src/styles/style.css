@@ -29,6 +29,10 @@ body {
   height: 100vh;
 }
 
+body h1 {
+  font-family: sans-serif;
+}
+
 nav {
   position: fixed;
   top: 0;
@@ -117,6 +121,8 @@ menu li {
   overflow: scroll;
   -ms-scroll-snap-type: y mandatory;
       scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .container-x {
@@ -155,14 +161,6 @@ menu li {
   scroll-snap-align: center;
 }
 
-#end-item {
-  margin: 75px 300px 75px 60px;
-}
-
-#start-item {
-  margin: 75px 60px 75px 300px;
-}
-
 .item {
   background-color: pink;
   border: 3px solid black;
@@ -182,10 +180,6 @@ menu li {
       -ms-flex-direction: column;
           flex-direction: column;
   scroll-snap-align: center;
-}
-
-#portfolio {
-  text-align: center;
 }
 
 .top-item {
@@ -219,11 +213,6 @@ menu li {
   font-size: 5rem;
 }
 
-.b\&w {
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-}
-
 #contact-me {
   height: 100vh;
   width: 100vw;
@@ -233,6 +222,11 @@ menu li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.b\&w {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 
 .contact-me {
@@ -337,5 +331,8 @@ form {
 
 .button {
   padding: 10px;
+  border-radius: 5px;
+  border: 2px solid black;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

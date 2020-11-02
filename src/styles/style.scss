@@ -2,7 +2,7 @@
   justify-content: center;
   align-items: center;
 }
-
+// reset default browser alignment
 * {
   margin: 0;
   padding: 0;
@@ -36,8 +36,12 @@ body {
   color: rgb(0, 0, 0);
   line-height: 1.6;
   height: 100vh;
+  h1{
+    font-family: sans-serif;
+  }
 }
 
+//fixed top nav bar - Designed for Desktop (redisigned for tablet and phone?)
 nav {
   position: fixed;
   top: 0;
@@ -80,6 +84,7 @@ nav {
   }
 }
 
+// used for links to social media on index.html
 menu {
   display: flex;
   list-style: none;
@@ -93,17 +98,21 @@ menu {
   }
 }
 
+// Center align class
 .center {
   text-align: center;
   @include center;
 }
 
+// allows scroll snap on the y axis (everything inside of the container as long as it has an item class can snap
 .container-y {
   max-height: 100vh;
   overflow: scroll;
   scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
-
+// as above allows scroll snap on the y axis (mainly for mobile support)
 .container-x {
   max-width: 100vw;
   overflow-x: scroll;
@@ -112,6 +121,7 @@ menu {
   flex-direction: row;
 }
 
+//item class for the x axis scrolling
 .item-x {
   background-color: pink;
   border: 3px solid black;
@@ -124,14 +134,16 @@ menu {
   scroll-snap-align: center;
 }
 
-#end-item {
-  margin: 75px 300px 75px 60px;
-}
+//unused code for x axis first and last items
+// #end-item {
+//   margin: 75px 300px 75px 60px;
+// }
 
-#start-item {
-  margin: 75px 60px 75px 300px;
-}
+// #start-item {
+//   margin: 75px 60px 75px 300px;
+// }
 
+// item for y axis scrolling
 .item {
   background-color: pink;
   border: 3px solid black;
@@ -143,16 +155,12 @@ menu {
   scroll-snap-align: center;
 }
 
-#portfolio{
-  text-align: center;
-  h1{
-  }
-}
-
+// tweaked margin on first item in y axis scrolling
 .top-item {
   margin: 90px 60px 0px 60px;
 }
 
+// tweaked margin on last item in y axis scrolling
 .bottom-item {
   margin: 60px;
 }
@@ -173,10 +181,6 @@ menu {
   }
 }
 
-.b\&w {
-  filter: grayscale(100%);
-}
-
 #contact-me {
   height: 100vh;
   width: 100vw;
@@ -184,6 +188,14 @@ menu {
   align-items: center;
 }
 
+
+
+//class for making icons black and white (does not work well) Replace asap
+.b\&w {
+  filter: grayscale(100%);
+}
+
+//used for the form inside of the id contact-me (BAD NAMING)
 .contact-me {
   min-height: 40vh;
   width: 100vw;
@@ -193,6 +205,7 @@ menu {
   flex-direction: column;
 }
 
+// Creates spacing and hiding of important elements (hiding of animation)
 form {
   display: flex;
   justify-content: space-evenly;
@@ -203,6 +216,7 @@ form {
   overflow: hidden;
 }
 
+// Animation used in clicking on elements inside of form
 .form {
   position: relative;
   height: 5%;
@@ -263,4 +277,7 @@ form {
 
 .button{
   padding: 10px;
+  border-radius: 5px;
+  border: 2px solid black;
+  cursor: pointer;
 }
