@@ -1,3 +1,9 @@
+$background-color: #0f0e17;
+$paragraph-color: #a7a9be;
+$headline-color: #fffffe;
+$secondary-color: #ff8906;
+$tertiary-color: #e53170;
+
 @mixin center {
   justify-content: center;
   align-items: center;
@@ -10,20 +16,20 @@
 
 // scrollbar width
 *::-webkit-scrollbar {
-  background-color: #fff;
+  background-color: $background-color;
   width: 16px;
 }
 
 // background of the scrollbar
 *::-webkit-scrollbar-track {
-  background-color: #fff;
+  background-color: $background-color;
 }
 
 // scrollbar bar
 *::-webkit-scrollbar-thumb {
-  background-color: #babac0;
+  background-color: $paragraph-color;
   border-radius: 16px;
-  border: 4px solid #fff;
+  border: 4px solid $background-color;
 }
 
 // Top and bottom button
@@ -32,8 +38,8 @@
 }
 
 body {
-  background: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
+  background: $background-color;
+  color: $headline-color;
   line-height: 1.6;
   height: 100vh;
   h1{
@@ -64,19 +70,19 @@ nav {
       a {
         text-decoration: none;
         text-transform: uppercase;
-        color: #f4f4f4;
+        color: $headline-color;
         transition: 0.5s;
         font-size: 1rem;
       }
 
       a:hover {
-        color: #56c9e6;
+        color: $secondary-color;
         font-size: 1.1rem;
         transition: 0.2s;
       }
 
       a:active {
-        color: #56c9e6;
+        color: $secondary-color;
         font-size: 0.9rem;
       }
     }
@@ -122,7 +128,7 @@ menu {
 
 //item class for the x axis scrolling
 .item-x {
-  background-color: pink;
+  background-color: $secondary-color;
   border: 3px solid black;
   height: 60vh;
   min-width: 60vw;
@@ -144,9 +150,9 @@ menu {
 
 // item for y axis scrolling
 .item {
-  background-color: pink;
+  background-color: $secondary-color;
   border: 3px solid black;
-  height: 80vh;
+  height: 60vh;
   margin: 60px 60px 0px 60px;
   display: flex;
   @include center;
@@ -231,10 +237,11 @@ form {
   input {
     width: 100%;
     height: 150%;
-    color: blue;
+    color: $headline-color;
     padding-top: 10px;
     border: none;
     outline: none;
+    background-color: $background-color;
   }
 
   label {
@@ -244,7 +251,7 @@ form {
     width: 100%;
     height: 50px;
     pointer-events: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid $headline-color;
   }
   label::after{
     content: "";
@@ -253,7 +260,7 @@ form {
     bottom: -1px;
     height: 100%;
     width: 100%;
-    border-bottom: 3px solid skyblue;
+    border-bottom: 3px solid $tertiary-color;
     transform: translateX(-150%);
     transition: all 0.3s ease;
     opacity: 0%;
@@ -263,7 +270,7 @@ form {
   input:valid + .label-name .content-name{
     transform: translateY(-100%);
     font-size: 0.9rem;
-    color: skyblue;
+    color: $tertiary-color;
     opacity: 100%;
   }
 
@@ -284,8 +291,15 @@ form {
 .button{
   padding: 10px;
   border-radius: 5px;
+  color: $headline-color;
+  background-color: $secondary-color;
   border: 2px solid black;
   cursor: pointer;
+  transition: 0.4s;
+}
+
+.button:hover{
+  padding: 15px;
 }
 
 footer{
