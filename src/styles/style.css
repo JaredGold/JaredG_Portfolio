@@ -32,7 +32,7 @@ body {
 }
 
 body h1 {
-  font-family: "Arvo", serif;
+  font-family: "Ubuntu", serif;
   text-shadow: 1px 1px 3px black;
 }
 
@@ -42,7 +42,7 @@ body p {
   text-shadow: 2px 2px 3px black;
 }
 
-body h2 {
+body time {
   font-family: "Quicksand", sans-serif;
   font-weight: lighter;
   font-size: 12px;
@@ -101,6 +101,23 @@ nav ul li a:active {
   font-size: 0.9rem;
 }
 
+header {
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  max-height: 10vh;
+}
+
 menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -123,6 +140,30 @@ menu li {
 
 menu li image {
   background-color: white;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  height: 600px;
+  overflow: hidden;
+}
+
+footer {
+  text-align: center;
+  max-height: 5vh;
 }
 
 .logo {
@@ -259,83 +300,6 @@ menu li image {
   margin: 60px;
 }
 
-#about-me {
-  width: 100%;
-  min-height: 100vh;
-}
-
-#home-page {
-  width: 100%;
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-#home-page h1 {
-  font-size: 5rem;
-}
-
-#home-page main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
-
-header {
-  margin-top: 80px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  max-height: 10vh;
-}
-
-#contact-me {
-  height: 100vh;
-  width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
 .contact-me {
   min-height: 40vh;
   width: 100vw;
@@ -351,25 +315,6 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 50%;
-  height: 600px;
-  overflow: hidden;
 }
 
 .form {
@@ -452,12 +397,91 @@ form {
   padding: 15px;
 }
 
-footer {
-  text-align: center;
-  max-height: 5vh;
+#gold {
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+#gold:hover {
+  color: gold;
+  font-size: 4rem;
+}
+
+#contact-me {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#red {
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+#red:hover {
+  color: red;
+  font-size: 6rem;
+}
+
+#about-me {
+  width: 100%;
+  min-height: 100vh;
+}
+
+#home-page {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#home-page h1 {
+  font-size: 5rem;
+  cursor: default;
+}
+
+#home-page main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 @media screen and (max-width: 480px) {
+  nav {
+    height: 55px;
+  }
   nav ul li {
     padding: 0.8rem;
   }
@@ -469,6 +493,16 @@ footer {
   }
   nav ul li a:active {
     font-size: 0.6rem;
+  }
+  menu li {
+    margin: 0;
+    padding: 1rem;
+  }
+  menu .logo {
+    width: 20px;
+  }
+  #home-page h1 {
+    font-size: 3rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
