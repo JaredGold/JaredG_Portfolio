@@ -3,11 +3,14 @@ $paragraph-color: #a7a9be;
 $headline-color: #fffffe;
 $secondary-color: #ff8906;
 $tertiary-color: #e53170;
+$font1: 'Arvo', serif;
+$font2: 'Quicksand', sans-serif;
 
 @mixin center {
   justify-content: center;
   align-items: center;
 }
+
 // reset default browser alignment
 * {
   margin: 0;
@@ -42,8 +45,25 @@ body {
   color: $headline-color;
   line-height: 1.6;
   height: 100vh;
-  h1{
-    font-family: sans-serif;
+  font-family: $font2;
+  max-height: 100vh;
+
+  h1 {
+    font-family: $font1;
+    text-shadow: 1px 1px 3px black;
+  }
+
+  p{
+    font-family: $font2;
+    font-weight: lighter ;
+    text-shadow: 2px 2px 3px black;
+  }
+
+  h2{
+    font-family: $font2;
+    font-weight: lighter ;
+    font-size: 12px;
+    text-shadow: 2px 2px 3px black;
   }
 }
 
@@ -100,7 +120,22 @@ menu {
   li {
     margin: 0 1rem;
     padding: 1rem;
+    image{
+      background-color: white;
+    }
   }
+}
+
+.logo{
+  display: block;
+  width: 50px;
+  height: 50px;
+  transition: 0.5s;
+}
+
+.logo:hover{
+  width: 55px;
+  height: 55px;
 }
 
 // Center align class
@@ -111,12 +146,13 @@ menu {
 
 // allows scroll snap on the y axis (everything inside of the container as long as it has an item class can snap
 .container-y {
-  max-height: 100vh;
+  max-height: 95vh;
   overflow: scroll;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+
 // as above allows scroll snap on the y axis (mainly for mobile support)
 .container-x {
   max-width: 100vw;
@@ -139,16 +175,6 @@ menu {
   scroll-snap-align: center;
 }
 
-//unused code for x axis first and last items
-// #end-item {
-//   margin: 75px 300px 75px 60px;
-// }
-
-// #start-item {
-//   margin: 75px 60px 75px 300px;
-// }
-
-// item for y axis scrolling
 .item {
   background-color: $secondary-color;
   border: 3px solid black;
@@ -158,11 +184,38 @@ menu {
   @include center;
   flex-direction: column;
   scroll-snap-align: center;
+  overflow-x: hidden;
 }
 
-// tweaked margin on first item in y axis scrolling
-.top-item {
-  margin: 90px 60px 0px 60px;
+.item-blog {
+  background-color: $secondary-color;
+  border: 3px solid black;
+  height: 60vh;
+  margin: 60px 60px 0px 60px;
+  display: flex;
+  @include center;
+  flex-direction: row;
+  scroll-snap-align: center;
+  overflow-x: hidden;
+  justify-content: space-around;
+
+  article{
+    padding: 40px;
+  }
+
+  .blog-image-container{
+    width: 50%;
+    height: 100%
+
+
+  }
+  .blog-image{
+    object-fit: cover;
+    width: 100%;
+    height: 100%
+  }
+
+
 }
 
 // tweaked margin on last item in y axis scrolling
@@ -186,11 +239,20 @@ menu {
     font-size: 5rem;
   }
 
-  main{
+  main {
     display: flex;
     @include center;
     flex-grow: 1;
   }
+}
+
+
+header{
+  margin-top: 80px;
+  display: flex;
+  @include center;
+  flex-grow: 1;
+  max-height: 10vh;
 }
 
 #contact-me {
@@ -200,11 +262,6 @@ menu {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-}
-
-//class for making icons black and white (does not work well) Replace asap
-.b\&w {
-  filter: grayscale(100%);
 }
 
 //used for the form inside of the id contact-me (BAD NAMING)
@@ -253,7 +310,8 @@ form {
     pointer-events: none;
     border-bottom: 1px solid $headline-color;
   }
-  label::after{
+
+  label::after {
     content: "";
     position: absolute;
     left: 0px;
@@ -266,29 +324,29 @@ form {
     opacity: 0%;
   }
 
-  input:focus + .label-name .content-name, 
-  input:valid + .label-name .content-name{
+  input:focus+.label-name .content-name,
+  input:valid+.label-name .content-name {
     transform: translateY(-100%);
     font-size: 0.9rem;
     color: $tertiary-color;
     opacity: 100%;
   }
 
-  input:focus + .label-name::after, 
-  input:valid + .label-name::after{
+  input:focus+.label-name::after,
+  input:valid+.label-name::after {
     transform: translateX(0%);
     opacity: 100%;
   }
 }
 
-.content-name{
+.content-name {
   position: absolute;
   bottom: 5px;
   left: 0px;
   transition: all 0.3s ease;
 }
 
-.button{
+.button {
   padding: 10px;
   border-radius: 5px;
   color: $headline-color;
@@ -298,10 +356,34 @@ form {
   transition: 0.4s;
 }
 
-.button:hover{
+.button:hover {
   padding: 15px;
 }
 
-footer{
+footer {
   text-align: center;
+  max-height: 5vh;
+}
+
+//mobile phone screens
+@media screen and (max-width: 480px) {
+  nav {
+    ul {
+      li {
+        padding: 0.8rem;
+
+        a {
+          font-size: 0.7rem;
+        }
+
+        a:hover {
+          font-size: 0.8rem;
+        }
+
+        a:active {
+          font-size: 0.6rem;
+        }
+      }
+    }
+  }
 }
