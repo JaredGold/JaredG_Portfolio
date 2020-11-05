@@ -1,17 +1,26 @@
 $background-color: #0f0e17;
+$hamburger-bg-color: #0f0e178a;
 $paragraph-color: #a7a9be;
 $headline-color: #fffffe;
 $secondary-color: #ff8906;
 $tertiary-color: #e53170;
-$font1: 'Ubuntu',
-serif;
-$font2: 'Quicksand',
-sans-serif;
+$nav-color: rgba(36, 36, 36, 0.808);
+$font1: 'Ubuntu', serif;
+$font2: 'Quicksand', sans-serif;
+$nav-speed: 0.3s;
 
 @mixin center {
   justify-content: center;
   align-items: center;
 }
+
+#nav-parent{
+  width: 100vw;
+  display: flex;
+  @include center;
+}
+
+
 
 // reset default browser alignment
 * {
@@ -79,8 +88,17 @@ nav {
   display: flex;
   height: 60px;
   width: 100%;
-  background: rgba(36, 36, 36, 0.808);
+  background: $nav-color;
 
+  input{
+    display: none;
+  }
+
+  .menu{
+    div{
+      @include center;
+    }
+  }
   ul {
     display: flex;
     list-style: none;
@@ -392,25 +410,155 @@ footer {
 //mobile phone screens
 @media screen and (max-width: 480px) {
   nav {
-    height: 55px;
     ul {
       li {
         padding: 0.8rem;
 
         a {
-          font-size: 0.7rem;
+          font-size: 2rem;
 
           &:hover {
-            font-size: 0.8rem;
+            font-size: 2.2rem;
           }
 
           &:active {
-            font-size: 0.6rem;
+            font-size: 1.8rem;
           }
         }
       }
     }
   }
+
+nav{
+  input{
+    display: block;
+  }
+
+  .toggler{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+  }
+  .hamburger{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    padding: 1rem;
+    background: $hamburger-bg-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hamburger > div{
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+
+    // style for top and bottom lines
+    &:before,
+    &:after{
+      content: '';
+      position: absolute;
+      z-index: 1;
+      top: -10px;
+      width: 100%;
+      height: 2px;
+      background: inherit;
+    }
+    // moves bottom line down
+    &:after{
+      top: 10px;
+    }
+  }
+}
+
+// toggler animation
+nav{
+  .toggler:checked + .hamburger > div{
+    transform: rotate(135deg);
+
+    &:before,
+    &:after{
+      top: 0;
+      transform: rotate(90deg);
+    }
+  }
+}
+
+// Rotate when hover is checked
+nav{
+  .toggler:checked:hover + .hamburger > div{
+    transform: rotate(225deg);
+  }
+}
+
+// show menu
+nav .toggler:checked ~ .menu{
+  visibility: visible;
+  div{
+    transform: scale(1);
+    transition-duration: $nav-speed;
+    div{
+      opacity: 1;
+      transition: opacity 0.4s ease;
+    }
+  }
+}
+
+nav{
+  height: 0;
+  .menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    div{
+      background: $nav-color;
+      width: 200vw;
+      height: 200vw;
+      display: flex;
+      flex: none;
+      align-items: center;
+      justify-content: center;
+      transform: scale(0);
+      transition: all 0.4s ease;
+
+      div{
+        text-align: center;
+        max-width: 100vw;
+        max-height: 100vh;
+        opacity: 0;
+        transition: opacity 0.4s ease;
+
+        ul{
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
+
 
   menu {
     li {

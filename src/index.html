@@ -5,22 +5,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&family=Ubuntu:wght@700&display=swap"
+    rel="stylesheet">
   <title>Jared Goldstein Portfolio</title>
 </head>
 
 <body id="home-page">
   <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="pages/aboutme.html">About Me</a></li>
-      <li><a href="pages/portfolio.html">Portfolio</a></li>
-      <li><a href="pages/blog.html">Blog</a></li>
-      <li><a href="pages/contact.html">Contact</a></li>
-    </ul>
+    <input type="checkbox" name="" id="" class="toggler">
+    <div class="hamburger">
+      <div></div>
+    </div>
+    <div class="menu">
+      <div>
+        <div id="nav-parent">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/aboutme.html">About Me</a></li>
+            <li><a href="pages/portfolio.html">Portfolio</a></li>
+            <li><a href="pages/blog.html">Blog</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </nav>
-  <main>
-    <div class="center">
+  <main class="showcase">
+    <div class="center container showcase-inner">
       <h1>Ja<span id="red">red</span> <span id="gold">Gold</span>stein</h1>
       <menu>
         <li><a href="https://github.com/JaredGold" target="_blank"><img src="images/SVG Logos/github.svg"
@@ -29,8 +40,8 @@
               src="images/SVG Logos/linkedin.svg" alt="LinkedIn Logo" class="logo"></a></li>
         <li><a href="https://twitter.com/Time4Jared" target="_blank"><img src="images/SVG Logos/twitter.svg"
               alt="Twitter Logo" class="logo"></a></li>
-        <li><a href="mailto:jegoldstein94@gmail.com" target="_blank"><img src="images/SVG Logos/gmail.svg" alt="mail logo"
-              class="logo"></a></li>
+        <li><a href="mailto:jegoldstein94@gmail.com" target="_blank"><img src="images/SVG Logos/gmail.svg"
+              alt="mail logo" class="logo"></a></li>
       </menu>
     </div>
   </main>
