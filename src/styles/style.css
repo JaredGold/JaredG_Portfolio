@@ -721,9 +721,10 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 30px 10px 0px 10px;
+    margin: 30px auto 0px auto;
     overflow: hidden;
     height: 80vh;
+    width: 90%;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;

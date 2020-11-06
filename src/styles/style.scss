@@ -621,9 +621,10 @@ footer {
 
   .item-blog {
     flex-direction: column;
-    margin: 30px 10px 0px 10px;
+    margin: 30px auto 0px auto;
     overflow: hidden;
     height: 80vh;
+    width: 90%;
     justify-content: flex-start;
 
     .blog-image-container {
