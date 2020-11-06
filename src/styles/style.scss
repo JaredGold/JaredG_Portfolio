@@ -4,6 +4,8 @@ $paragraph-color: #a7a9be;
 $headline-color: #fffffe;
 $secondary-color: #ff8906;
 $tertiary-color: #e53170;
+$contrast-color: black;
+$shadow-color: white;
 $nav-color: rgba(36, 36, 36, 0.808);
 $font1: 'Ubuntu', serif;
 $font2: 'Quicksand', sans-serif;
@@ -63,20 +65,20 @@ body {
 
   h1 {
     font-family: $font1;
-    text-shadow: 1px 1px 3px black;
+    text-shadow: 1px 1px 1px $shadow-color;
   }
 
   p {
     font-family: $font2;
     font-weight: lighter;
-    text-shadow: 2px 2px 3px black;
+    text-shadow: 0px 1px 2px $shadow-color;
   }
 
   time {
     font-family: $font2;
     font-weight: lighter;
     font-size: 12px;
-    text-shadow: 2px 2px 3px black;
+    text-shadow: 2px 2px 3px $shadow-color;
   }
 }
 
@@ -186,7 +188,9 @@ footer {
   height: 55px;
 }
 
-
+#home-page{
+  color: $headline-color;
+}
 
 // Center align class
 .center {
@@ -223,6 +227,10 @@ footer {
   @include center;
   flex-direction: column;
   scroll-snap-align: center;
+}
+
+.contrast{
+    color: $contrast-color;
 }
 
 .item {
