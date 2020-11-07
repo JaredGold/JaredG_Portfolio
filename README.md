@@ -36,57 +36,57 @@ On my home page I have included a list of links to my main media pages, LinkedIn
 
 ## Sitemap
 
-![Site Map](.\docs\images\Site Map.png)
+![Site Map](./docs/images/site-map.png)
 
 ## Screenshots
 
 #### Home Page
 
-![Site Map](\docs\images\home-page.jpg)
+![Site Map](./docs/images/home-page.jpg)
 
 #### About Me Page
 
-![Site Map](.\docs\images\about-me.jpg)
+![Site Map](./docs/images/about-me.jpg)
 
 #### Portfolio (similar view to blog)
 
-![Site Map](.\docs\images\portfolio.jpg)
+![Site Map](./docs/images/portfolio.jpg)
 
 #### Contact Me Page
 
-![Site Map](.\docs\images\Contact-Me.jpg)
+![Site Map](./docs/images/Contact-Me.jpg)
 
 #### Mobile View Home Page
 
-![Site Map](.\docs\images\mobile-view-home.jpg)
+![Site Map](./docs/images/mobile-view-home.jpg)
 
 #### Mobile View Nav Menu
 
-![Site Map](.\docs\images\menu-mobile.jpg)
+![Site Map](./docs/images/menu-mobile.jpg)
 
 #### Home Page
 
-![Home](.\docs\SiteMap\Home.png)
+![Home](./docs/SiteMap/Home.png)
 
 #### About Me
 
-![ABOUT ME](.\docs\SiteMap\ABOUT ME.png)
+![about-me](./docs/SiteMap/about-me.png)
 
 #### Portfolio	
 
-![Portfolio](.\docs\SiteMap\Portfolio.png)
+![Portfolio](./docs/SiteMap/Portfolio.png)
 
 #### Blog
 
-![Blog](.\docs\SiteMap\Blog.png)
+![Blog](./docs/SiteMap/Blog.png)
 
 #### Contact
 
-![Contact](.\docs\SiteMap\Contact.png)
+![Contact](./docs/SiteMap/Contact.png)
 
 #### Mobile Menu
 
-![Button menu](.\docs\SiteMap\Button menu.png)
+![button-menu](./docs/SiteMap/button-menu.png)
 
 
 
