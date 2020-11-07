@@ -66,27 +66,27 @@ On my home page I have included a list of links to my main media pages, LinkedIn
 
 #### Home Page
 
-![Home](./docs/SiteMap/Home.png)
+![Home](./docs/WireFrame/Home.png)
 
 #### About Me
 
-![about-me](./docs/SiteMap/about-me.png)
+![about-me](./docs/WireFrame/about-me.png)
 
 #### Portfolio	
 
-![Portfolio](./docs/SiteMap/Portfolio.png)
+![Portfolio](./docs/WireFrame/Portfolio.png)
 
 #### Blog
 
-![Blog](./docs/SiteMap/Blog.png)
+![Blog](./docs/WireFrame/Blog.png)
 
 #### Contact
 
-![Contact](./docs/SiteMap/Contact.png)
+![Contact](./docs/WireFrame/Contact.png)
 
 #### Mobile Menu
 
-![button-menu](./docs/SiteMap/button-menu.png)
+![button-menu](./docs/WireFrame/button-menu.png)
 
 
 
