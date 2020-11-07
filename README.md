@@ -42,27 +42,27 @@ On my home page I have included a list of links to my main media pages, LinkedIn
 
 #### Home Page
 
-![Site Map](./docs/images/home-page.jpg)
+![home-page](./docs/images/home-page.jpg)
 
 #### About Me Page
 
-![Site Map](./docs/images/about-me.jpg)
+![about-me](./docs/images/about-me.jpg)
 
 #### Portfolio (similar view to blog)
 
-![Site Map](./docs/images/portfolio.jpg)
+![portfolio](./docs/images/portfolio.jpg)
 
 #### Contact Me Page
 
-![Site Map](./docs/images/Contact-Me.jpg)
+![contact-me](./docs/images/Contact-Me.jpg)
 
 #### Mobile View Home Page
 
-![Site Map](./docs/images/mobile-view-home.jpg)
+![mobile-view-home](./docs/images/mobile-view-home.jpg)
 
 #### Mobile View Nav Menu
 
-![Site Map](./docs/images/menu-mobile.jpg)
+![menu-mobile](./docs/images/menu-mobile.jpg)
 
 #### Home Page
 
