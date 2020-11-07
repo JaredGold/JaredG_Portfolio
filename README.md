@@ -42,7 +42,7 @@ On my home page I have included a list of links to my main media pages, LinkedIn
 
 #### Home Page
 
-![Site Map](.\docs\images\home-page.jpg)
+![Site Map](\docs\images\home-page.jpg)
 
 #### About Me Page
 
