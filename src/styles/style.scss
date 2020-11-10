@@ -7,24 +7,15 @@ $tertiary-color: #e53170;
 $contrast-color: black;
 $shadow-color: white;
 $nav-color: rgba(36, 36, 36, 0.808);
-$font1: 'Ubuntu',
-serif;
-$font2: 'Quicksand',
-sans-serif;
+$font1: 'Ubuntu', serif;
+$font2: 'Quicksand', sans-serif;
 $nav-speed: 0.3s;
 
+//Defaults a center align on any flex group
 @mixin center {
   justify-content: center;
   align-items: center;
 }
-
-#nav-parent {
-  width: 100vw;
-  display: flex;
-  @include center;
-}
-
-
 
 // reset default browser alignment
 * {
@@ -134,6 +125,7 @@ nav {
   }
 }
 
+// Adds a stylised header which grows depending on the view height
 header {
   margin-top: 80px;
   display: flex;
@@ -172,11 +164,13 @@ form {
   overflow: hidden;
 }
 
+// footer alignment and height
 footer {
   text-align: center;
   max-height: 5vh;
 }
 
+//Clean logo size (Uses svg)
 .logo {
   display: block;
   width: 50px;
@@ -184,13 +178,10 @@ footer {
   transition: 0.5s;
 }
 
+//logo animation
 .logo:hover {
   width: 55px;
   height: 55px;
-}
-
-#home-page {
-  color: $headline-color;
 }
 
 // Center align class
@@ -230,11 +221,13 @@ footer {
   scroll-snap-align: center;
 }
 
+//add backdrop for black text
 .contrast {
   color: $contrast-color;
   text-shadow: 0px 1px 2px $shadow-color;
 }
 
+// Used with scroll snapping (This is the individual item)
 .item {
   background-color: $secondary-color;
   border: 3px solid black;
@@ -247,6 +240,7 @@ footer {
   overflow: hidden;
 }
 
+// smaller scroll snapping item
 .item-blog {
   background-color: $secondary-color;
   border: 3px solid black;
@@ -354,6 +348,7 @@ footer {
   }
 }
 
+// used in the animation for form
 .content-name {
   position: absolute;
   bottom: 5px;
@@ -361,6 +356,7 @@ footer {
   transition: all 0.3s ease;
 }
 
+//submit button design
 .button {
   padding: 10px;
   border-radius: 5px;
@@ -371,10 +367,12 @@ footer {
   transition: 0.4s;
 }
 
+//submit animation
 .button:hover {
   padding: 15px;
 }
 
+//
 #gold {
   transition: 0.3s linear;
 
@@ -384,6 +382,7 @@ footer {
   }
 }
 
+//design for contact me
 #contact-me {
   height: 100vh;
   width: 100vw;
@@ -393,6 +392,7 @@ footer {
   flex-direction: column;
 }
 
+//add animation to my name red class
 #red {
   transition: 0.3s linear;
 
@@ -402,6 +402,7 @@ footer {
   }
 }
 
+//add class to my about logos
 #abt-logos{
   display: flex;
   flex-direction: row;
@@ -410,17 +411,27 @@ footer {
   }
 }
 
+// Design for about me
 #about-me {
   width: 100%;
   min-height: 100vh;
 }
 
+//Parent for the nav class
+#nav-parent {
+  width: 100vw;
+  display: flex;
+  @include center;
+}
+
+// design for home page
 #home-page {
   width: 100%;
   height: 100vh;
   display: flex;
   @include center;
   flex-direction: column;
+  color: $headline-color;
 
   h1 {
     font-size: 5rem;
@@ -460,6 +471,7 @@ footer {
     }
   }
 
+  //nav and nav animation for hamburger
   nav {
     input {
       display: block;
@@ -664,6 +676,7 @@ footer {
     justify-content: space-between;
   }
 
+  
   nav {
     ul {
       li {
@@ -683,7 +696,7 @@ footer {
       }
     }
   }
-
+//nav and nav animation for hamburger
   nav {
     input {
       display: block;
@@ -907,6 +920,7 @@ footer {
     }
   }
 
+//nav and nav animation for hamburger
   nav {
     input {
       display: block;
