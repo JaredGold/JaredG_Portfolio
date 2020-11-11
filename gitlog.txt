@@ -1,0 +1,296 @@
+commit 07715e4d0dea5a81741adf4bb019d3cd50a9eede
+Author: JaredGold <jegoldstein94@gmail.com>
+Date:   Wed Nov 11 12:35:54 2020 +1100
+
+    Clean foldering
+
+commit 5a9176a6ac5a50a759e2abd07c60f0124e5421c4
+Author: JaredGold <jegoldstein94@gmail.com>
+Date:   Wed Nov 11 12:16:35 2020 +1100
+
+    Add SRI
+
+commit d80adc873fc17248b119f9f2c6686fa9e1fcade9
+Author: JaredGold <jegoldstein94@gmail.com>
+Date:   Wed Nov 11 12:03:03 2020 +1100
+
+    Add comments
+
+commit b059f4c060a7b368fd612775910ced42732879c8
+Author: JaredGold <jegoldstein94@gmail.com>
+Date:   Wed Nov 11 10:54:16 2020 +1100
+
+    Add comments in scss
+
+commit a5efa05e75c54701a924ee5e0fb55674481e7d67
+Merge: eabfae9 5a0d5e9
+Author: JaredGold <jegoldstein94@gmail.com>
+Date:   Wed Nov 11 10:37:23 2020 +1100
+
+    I don't know what is going on.
+    
+    Merge branch 'main' of github.com:JaredGold/JaredG_Portfolio into main
+
+commit 5a0d5e931c9c416a99e097307032b720ffe00ca8
+Author: JaredGold <jegoldstein94@gmail.com>
+Date:   Tue Nov 10 18:46:46 2020 +1100
+
+    fix favicon
+
+commit eabfae93c88e1092ee552492dc15d4a109539fa7
+Author: JaredGold <jegoldstein94@gmail.com>
+Date:   Sat Nov 7 18:39:23 2020 +1100
+
+    Fix last commit
+
+commit 5d3fa14517899588e3604098926e5564dfb97394
+Author: JaredGold <jegoldstein94@gmail.com>
+Date:   Sat Nov 7 14:02:48 2020 +1100
+
+    Add favicon
+
+commit 13bfc2355c856d73c7219e62b4342302929edca0
+Author: JaredGold <jegoldstein94@gmail.com>
+Date:   Sat Nov 7 12:21:45 2020 +1100
+
+    changed name of images to capital JPG
+
+commit bf28e82d3d56f72fee8c63e406ec561b039c50cd
+Author: JaredGold <jegoldstein94@gmail.com>
+Date:   Sat Nov 7 12:18:58 2020 +1100
+
+    Change path of images
+
+commit c877f26a9be939f28f4d9ec00e63d88d9da8bcf0
+Author: JaredGold <jegoldstein94@gmail.com>
+Date:   Sat Nov 7 12:14:44 2020 +1100
+
+    Finish README.md
+
+commit a95e845ac27b98fe2a1c96a47adc1e4a4b24be3b
+Author: JaredGold <jegoldstein94@gmail.com>
+Date:   Sat Nov 7 12:05:39 2020 +1100
+
+    Fix README.md
+
+commit 20d7c5d582e0a3a1e0f4569ec36b65d299b11cde
+Author: JaredGold <jegoldstein94@gmail.com>
+Date:   Sat Nov 7 12:03:08 2020 +1100
+
+    complete README.md
+
+commit b7c78debd0e7c9360e53460096137ebdba0de3ea
+Author: JaredGold <jegoldstein94@gmail.com>
+Date:   Fri Nov 6 20:25:28 2020 +1100
+
+    fix mobile view
+
+commit a57a69d6ddc1f78e6b81bad57c56bf1590fd82a6
+Author: JaredGold <jegoldstein94@gmail.com>
+Date:   Fri Nov 6 16:40:54 2020 +1100
+
+    completely finished site
+
+commit 5f8bae095d6e2fa8083a453a94397467f2fb50db
+Author: JaredGold <jegoldstein94@gmail.com>
+Date:   Fri Nov 6 16:29:55 2020 +1100
+
+    finish website
+
+commit edb43837a47823cadf8f89905f176eed810a0616
+Author: JaredGold <jegoldstein94@gmail.com>
+Date:   Fri Nov 6 15:27:40 2020 +1100
+
+    add complete support
+
+commit 64144c1605d814b975b50e3a7f760a35189eeaef
+Author: JaredGold <jegoldstein94@gmail.com>
+Date:   Fri Nov 6 11:35:00 2020 +1100
+
+    fix contact text position
+
+commit 43e3c173e187a53716aaa0422732aa76fecf42dc
+Author: JaredGold <jegoldstein94@gmail.com>
+Date:   Fri Nov 6 11:31:28 2020 +1100
+
+    add shadow to contrast
+
+commit e47ecd30e57b4ef123365d3fe129f82d030fe690
+Author: JaredGold <jegoldstein94@gmail.com>
+Date:   Fri Nov 6 11:18:18 2020 +1100
+
+    Add contrast for visibiliy impaired users
+
+commit fef2866a02b231b66d47443b6e29bbfb971d52be
+Author: JaredGold <jegoldstein94@gmail.com>
+Date:   Fri Nov 6 10:33:01 2020 +1100
+
+    Add SEO and Update Best Practices
+
+commit eb770c7d1d3bc0f3ee2c90b335a0acd07fd41f4d
+Author: JaredGold <jegoldstein94@gmail.com>
+Date:   Thu Nov 5 15:31:49 2020 +1100
+
+    Clean css
+
+commit e57495aa293fd77fec91ee7a169240034fbb91d8
+Author: JaredGold <jegoldstein94@gmail.com>
+Date:   Thu Nov 5 15:07:49 2020 +1100
+
+    add vertical support
+
+commit 5071c63537ccafd8c1d14161d689ac1cc580a4d7
+Author: JaredGold <jegoldstein94@gmail.com>
+Date:   Thu Nov 5 14:51:17 2020 +1100
+
+    add mobile support for blog
+
+commit 541b65a6d2b3cdf6ee55329a334465c61c901148
+Author: JaredGold <jegoldstein94@gmail.com>
+Date:   Thu Nov 5 13:01:50 2020 +1100
+
+    add hamburger menu for mobile
+
+commit 232d22f01a4bfb4a6d31e9f20004d5cbeae4b470
+Author: JaredGold <jegoldstein94@gmail.com>
+Date:   Thu Nov 5 10:50:12 2020 +1100
+
+    add mobile support to home page
+
+commit f30adc948a9a491e56a759ff2647e2a9680a70ee
+Author: JaredGold <jegoldstein94@gmail.com>
+Date:   Wed Nov 4 12:50:34 2020 +1100
+
+    Add blog, Tweak fonts and colors
+
+commit a650041139a1cb0f5df64f46c0e9c8b913c72c25
+Author: JaredGold <jegoldstein94@gmail.com>
+Date:   Wed Nov 4 09:46:03 2020 +1100
+
+    Change colors
+
+commit b33af2ad237f1ee213ca572ab8d5b7ed1e4baebb
+Author: JaredGold <jegoldstein94@gmail.com>
+Date:   Tue Nov 3 16:07:58 2020 +1100
+
+    add slight mobile support
+
+commit cbdca968024874d270492cddec34616d8a3645bd
+Author: JaredGold <jegoldstein94@gmail.com>
+Date:   Mon Nov 2 11:50:16 2020 +1100
+
+    Add captions to scss file. (tweaked button)
+
+commit 52bbe70811442e3a801bbcba9a1f616f683307ec
+Author: JaredGold <jegoldstein94@gmail.com>
+Date:   Mon Nov 2 11:28:08 2020 +1100
+
+    Change Portfolio to Y Scrolling
+
+commit 83f9dbcb76a37e3323d4cb3a98c8d34e7a1a0086
+Author: JaredGold <jegoldstein94@gmail.com>
+Date:   Sun Nov 1 18:18:49 2020 +1100
+
+    Update Form
+
+commit 05c32bb0518c118330b223dc89203d2ebfc88498
+Author: JaredGold <jegoldstein94@gmail.com>
+Date:   Sun Nov 1 16:36:15 2020 +1100
+
+    add new form elements
+
+commit 8fc68bf9ce71e79a507eea821320cb7d8efadb1d
+Author: JaredGold <jegoldstein94@gmail.com>
+Date:   Sun Nov 1 12:16:13 2020 +1100
+
+    add form animation
+
+commit f0dc0c9c54f073a9ef885568047808ba4b627745
+Author: JaredGold <jegoldstein94@gmail.com>
+Date:   Sat Oct 31 21:55:28 2020 +1100
+
+    add horizontal scrolling to porfolio
+
+commit 781259a7030781b9d8a4846c2ac3fd6617d24b89
+Author: JaredGold <jegoldstein94@gmail.com>
+Date:   Sat Oct 31 18:28:45 2020 +1100
+
+    change scroll bar
+
+commit 8a395e200becaa0c1e73e2f7e569171c4e120f65
+Author: JaredGold <jegoldstein94@gmail.com>
+Date:   Sat Oct 31 18:11:29 2020 +1100
+
+    fix top padding
+
+commit e2b1173d9947ba4548edee40f78ab162dc28c989
+Author: JaredGold <jegoldstein94@gmail.com>
+Date:   Sat Oct 31 17:52:30 2020 +1100
+
+    add scroll snap
+
+commit 86c041135630de4bc63d0a05c36649c9735678b2
+Author: JaredGold <jegoldstein94@gmail.com>
+Date:   Sat Oct 31 17:01:36 2020 +1100
+
+    align center index
+
+commit 035a57377511d744ecba5cf181ac72472f8fe6db
+Author: JaredGold <jegoldstein94@gmail.com>
+Date:   Sat Oct 31 16:30:01 2020 +1100
+
+    revert css and html back
+
+commit 4e348e855609bd374edfa6ebcce4e8d619bcfda0
+Author: JaredGold <jegoldstein94@gmail.com>
+Date:   Sat Oct 31 16:18:13 2020 +1100
+
+    Add html content
+
+commit c35edb29d1a18a5e2ba471daa79ec1de75b2af0b
+Author: JaredGold <jegoldstein94@gmail.com>
+Date:   Sat Oct 31 13:28:26 2020 +1100
+
+    add index and base css
+
+commit 7ffd88794ceec6b57503d93a8ac1c0a35d09ccc0
+Author: JaredGold <jegoldstein94@gmail.com>
+Date:   Sat Oct 31 10:28:48 2020 +1100
+
+    add html's
+
+commit 86bd2de118146ffd3d800c9be0cba5c28d93f765
+Author: JaredGold <jegoldstein94@gmail.com>
+Date:   Sat Oct 31 10:06:58 2020 +1100
+
+    finish wireframe
+
+commit de2d810ded568e695b9d955716bed9c4522179dd
+Author: JaredGold <jegoldstein94@gmail.com>
+Date:   Fri Oct 30 22:42:36 2020 +1100
+
+    Add contact wireframe
+
+commit 354f9f31a071c979da439e606a54fcd8da1a5dcf
+Author: JaredGold <jegoldstein94@gmail.com>
+Date:   Fri Oct 30 20:52:50 2020 +1100
+
+    Add tablet, phone + desktop Wireframes
+
+commit d916f9967767ac3716505e34222b84201ca987a0
+Author: JaredGold <jegoldstein94@gmail.com>
+Date:   Fri Oct 30 18:42:19 2020 +1100
+
+    Sync test to PC
+
+commit ae455326bcb81a3917e96ac13b693db64fbb5147
+Author: JaredGold <jegoldstein94@gmail.com>
+Date:   Fri Oct 30 16:46:47 2020 +1100
+
+    Create start of wireframe
+
+commit 50b0bc19d8471ec957c31a455d4d67a7b824de4e
+Author: JaredGold <jegoldstein94@gmail.com>
+Date:   Fri Oct 30 14:48:30 2020 +1100
+
+    Initial Commit
