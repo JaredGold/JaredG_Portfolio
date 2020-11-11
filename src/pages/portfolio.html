@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Jared Goldstein's Portfolio which shows his current work and resume">
+  <meta name="description" content="Jared Goldstein's Portfolio which shows his current work and resume - portfolio page">
   <link rel="stylesheet" href="../styles/style.css">
   <link rel="icon" href="../favicon.ico"/>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
@@ -13,11 +13,13 @@
 
 <body>
   <nav>
+    <!--This hamburger menu is only viewed on mobile devices (If the device is not mobile it will all be disabled)-->
     <label for="hamburger-menu-toggle"></label>
     <input type="checkbox" name="hamburger-menu-toggle" id="" class="toggler">
     <div class="hamburger">
       <div></div>
     </div>
+    <!--Nav menu (this element is changed depending on the device size)-->
     <div class="menu">
       <div>
         <div id="nav-parent">
@@ -34,7 +36,9 @@
   </nav>
 
   <main>
+    <!--Container holds the items in order to scroll snap-->
     <section class="container-y contrast">
+      <!--Smaller items for blog posts-->
       <div class="item-blog">
         <div class="blog-image-container">
           <img src="../images/portfolio-images/pauls-pizzas.webp" alt="Paul's Pizzas website image" class="portfolio-image">

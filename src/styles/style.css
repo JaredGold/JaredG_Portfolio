@@ -153,6 +153,16 @@ menu li image {
   background-color: white;
 }
 
+table {
+  font-family: "Quicksand", sans-serif;
+  width: 30%;
+  height: 50%;
+}
+
+table th {
+  font-size: 1.5em;
+}
+
 form {
   display: -webkit-box;
   display: -ms-flexbox;

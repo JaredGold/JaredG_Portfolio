@@ -152,6 +152,14 @@ menu {
   }
 }
 
+table{
+  font-family: $font2;
+  width: 30%;
+  height: 50%;
+  th{
+    font-size: 1.5em;
+  }
+}
 
 // Creates spacing and hiding of important elements (hiding of animation)
 form {
